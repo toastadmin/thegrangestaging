@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+<msapplication>
+<tile>
+<square70x70logo src="http://local.thegrange.dev/wp-content/uploads/freshframework/ff_fresh_favicon/favicon_70x70--2016_09_20__03_05_15.png"/> <!-- IE11 Windows 8.1 favicon -->
+<square150x150logo src="http://local.thegrange.dev/wp-content/uploads/freshframework/ff_fresh_favicon/favicon_150x150--2016_09_20__03_05_15.png"/> <!-- IE11 Windows 8.1 favicon -->
+<wide310x150logo src="http://local.thegrange.dev/wp-content/uploads/freshframework/ff_fresh_favicon/favicon_310x150--2016_09_20__03_05_15.png"/> <!-- IE11 Windows 8.1 wide favicon -->
+<TileColor>#FFFFFF</TileColor></tile></msapplication></browserconfig>

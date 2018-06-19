@@ -1,0 +1,1255 @@
+@font-face {
+  font-family: 'americana';
+  src: url('../fonts/Americana.woff2') format('woff2'),
+       url('../fonts/Americana.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'centrale-sans';
+  src: url('../fonts/CentraleSansMedium.woff2') format('woff2'),
+       url('../fonts/CentraleSansMedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'centrale-sans';
+  src: url('../fonts/CentraleSansBold.woff2') format('woff2'),
+       url('../fonts/CentraleSansBold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body, html {
+  font-family: 'centrale-sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  color: #393c3e;
+}
+
+a:hover, a:visited {
+  color: inherit;
+}
+
+.ajde_evcal_calendar .eventon_events_list p,
+.eventon_events_list .eventon_list_event .evcal_desc span.evcal_event_subtitle, .evo_pop_body .evcal_desc span.evcal_event_subtitle,
+#evcal_list .eventon_list_event .evcal_desc span.evcal_event_title, .evo_popup .eventon_events_list .eventon_list_event .evcal_desc span.evcal_event_title,
+.evcal_evdata_row .evcal_evdata_cell, .evo_metarow_learnMICS .evcal_col50 .evcal_evdata_cell, .events-wrap > h1 {
+  font-family: 'centrale-sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !important;
+}
+
+body {
+  padding-top: 245px;
+}
+
+body.home {
+  padding-top: 0 !important;
+}
+
+:not(.event-info) .col-xs-12 > ul {
+  font-family: 'americana', serif;
+  font-size: 18px;
+  margin: 25px 17px;
+  padding: 0;
+}
+
+:not(.event-info) .col-xs-12 > ul > li {
+  margin-bottom: 15px;
+}
+
+header {
+  background: #fff !important;
+  position: fixed !important;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+header, header * {
+  transition: all 0.25s ease-out;
+}
+
+#logo {
+  max-width: 318px;
+}
+
+header.sticky {
+  height: 93px !important;
+  padding: 15px 0 !important;
+}
+
+header.sticky img {
+  max-width: 200px !important;
+}
+
+header.sticky #logo {
+  max-width: 200px;
+  float: left;
+  height: 63px;
+  overflow: hidden;
+}
+
+header.sticky .menu-golf-menu-container, header.sticky .menu-wedding-menu-container {
+  top: 35px !important;
+  padding: 0;
+  height: 22px;
+}
+
+header.sticky .menu-golf-menu-container a, header.sticky .menu-wedding-menu-container a {
+  border-color: #000 !important;
+  color: #000 !important;
+}
+
+header.sticky .booking-link {
+  bottom: 37px !important;
+}
+
+#menu-golf-menu li, #menu-wedding-menu li {
+  position: relative;
+  width: 125px;
+}
+
+.sub-menu {
+  display: none;
+  padding: 10px 0 0;
+  margin: 0;
+  width: 125px;
+}
+
+.sub-menu li {
+  display: block;
+  font-size: 12px !important;
+  margin: 0 0 3px !important;
+  padding: 0 10px 5px !important;
+}
+
+.sub-menu li * {
+  border: none !important;
+  text-decoration: none !important
+}
+
+header.sticky .sub-menu li * {
+  color: #fff !important;
+}
+
+header.sticky .menu-item-has-children:hover a {
+  border-color: #fff !important;
+  color: #fff !important;
+}
+
+#mobile-nav {
+  background: #fff;
+  display: none;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  top: 93px;
+  left: 0;
+}
+
+#mobile-nav ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#mobile-nav li {
+  margin: 10px 0;
+}
+
+#mobile-trigger {
+  background: none !important;
+  border: 0 !important;
+  display: none;
+  padding: 0;
+  outline: none !important;
+  height: 26px;
+  width: 26px;
+  float: right;
+  margin: 16px 0px;
+}
+
+#mobile-trigger .fa {
+  margin: 0 !important;
+  font-size: 26px;
+}
+
+#mobile-close {
+  background: none !important;
+  border: 0 !important;
+  display: none;
+  position: fixed;
+  outline: none !important;
+  top: 30px;
+  right: 14px;
+  padding: 0;
+  height: 28px;
+  width: 28px;
+}
+
+#mobile-close .fa {
+  margin: 0;
+  font-size: 24px;
+}
+
+.menu-golf-menu-container,
+.menu-wedding-menu-container {
+  top: 245px;
+  padding: 18px 0 0;
+  position: absolute;
+  left: 0;
+  z-index: 10;
+  transition: 0.25s background ease;
+  width: 100%;
+  height: 60px;
+}
+
+.menu-golf-menu-container.sticky,
+.menu-wedding-menu-container.sticky {
+  background: #fff;
+}
+
+.menu-golf-menu-container.sticky a,
+.menu-wedding-menu-container.sticky a {
+  color: #000 !important;
+}
+
+footer a {
+}
+
+footer a:hover,
+.menu-golf-menu-container * {
+  text-decoration: none !important;
+}
+
+.social-links {
+  margin-top: 15px;
+}
+
+.contact-number {
+  color: #fff !important;
+  display: block;
+  font-family: 'americana', serif;
+  margin-top: 1px;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.social-links a {
+  background: #fff;
+  border-radius: 100%;
+  color: #0c4530;
+  display: block;
+  height: 30px;
+  line-height: 36px;
+  text-align: center;
+  width: 30px;
+}
+
+.page-id-10 footer {
+  background: #0c4530;
+}
+
+.gallery-nav {
+  min-height: 650px;
+}
+
+.gallery-nav .col-sm-4 {
+  height: 650px;
+  padding: 0;
+}
+
+.gallery-nav .container-fluid {
+  padding: 0;
+}
+
+.gallery-nav a {
+  background-size: cover !important;
+  color: #fff;
+  display: block;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+.gallery-nav a span {
+  bottom: 25px;
+  font-size: 30px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0.2em;
+  position: absolute;
+  width: 100%;
+}
+
+.bg-gradient {
+  background: url('../img/bg-gradient.png') repeat-x;
+  height: 189px;
+  left: 0px;
+  position: absolute;
+  top: 245px;
+  width: 100%;
+  z-index: 5;
+}
+
+.current-menu-item a {
+  border-bottom: 1px solid #fff;
+}
+
+#menu-golf-menu,
+#menu-wedding-menu {
+  font-family: 'centrale-sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  list-style: none;
+  align-items: flex-start;
+  -webkit-align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+#menu-golf-menu a {
+  text-decoration: none !important;
+}
+
+#menu-golf-menu li,
+#menu-wedding-menu li {
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+#menu-golf-menu li.menu-item-has-children:hover,
+#menu-wedding-menu li.menu-item-has-children:hover {
+  background: #393d3f;
+}
+
+#menu-golf-menu li:hover .sub-menu,
+#menu-wedding-menu li:hover .sub-menu {
+  display: block !important;
+}
+
+#menu-golf-menu li a,
+#menu-wedding-menu li a {
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#menu-golf-menu li a:hover,
+#menu-wedding-menu li a:hover {
+  border-bottom: 1px solid #fff;
+  text-decoration: none !important
+}
+
+.menu-footer-container {
+  float: left;
+}
+
+#menu-footer {
+  margin: 38px 0 38px 60px;
+  padding: 0;
+}
+
+#menu-footer li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#menu-footer a {
+  color: #fff;
+  font-family: 'americana', serif;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.golf.contact-form .container, .weddings.contact-form .container {
+  max-width: 650px;
+}
+
+.golf.contact-form, .weddings.contact-form {
+  text-align: center;
+}
+
+.golf.contact-form {
+  background: #fff url('../img/bg-contactform.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 125px 0;
+}
+
+.weddings.contact-form {
+  background: #fff url('../img/bg-weddingscontactform.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 125px 0;
+}
+
+.wpcf7-not-valid-tip {
+  display: none !important;
+}
+
+.wpcf7-response-output {
+  left: 0;
+  position: absolute;
+  max-width: 650px;
+  width: 100%;
+}
+
+.golf.contact-form h1,
+.weddings.contact-form h1 {
+  color: #393c3e;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  margin-bottom: 40px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  height: 40px;
+  padding: 0 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  background: none;
+  border: 1px solid #393c3e;
+  font-family: 'americana', serif;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+textarea {
+  height: 200px;
+  padding: 15px;
+}
+
+input[type="submit"] {
+  background: #393c3e;
+  border: 1px solid #393c3e;
+  color: #fff;
+  font-size: 18px;
+  height: 43px;
+  width: 140px;
+}
+
+.events-footer {
+  background: url('../img/bg-eventsfooter.jpg') no-repeat center center;
+  background-size: cover;
+  font-family: 'americana', serif;
+  color: #fff;
+  padding: 150px 0;
+}
+
+.events-footer .container {
+  max-width: 675px;
+}
+
+.events-footer h1 {
+  margin-bottom: 35px;
+}
+
+.events-footer hr {
+  border-bottom: 3px solid #fff;
+  margin-bottom: 35px;
+  width: 75px;
+}
+
+.events-footer a {
+  color: #fff;
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+.landing-page {
+  background: url('../img/bg-landing.jpg') no-repeat center center;
+  background-size: cover !important;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+}
+
+.landing-page > a {
+  height: 261px;
+  left: 50%;
+  margin: -130.5px 0 0 -130.5px;
+  position: absolute;
+  top: 50%;
+  width: 261px;
+}
+
+.landing-page .monogram {
+  display: block;
+  width: 100%;
+}
+
+.landing-page .the-grange {
+  bottom: 5%;
+  height: 24px;
+  left: 50%;
+  margin: 0 0 0 -187.5px;
+  position: absolute;
+  width: 375px;
+}
+
+.landing-page .link-wrap {
+  bottom: 4.25%;
+  position: absolute;
+  text-align: center;
+  width: 50%;
+}
+
+.landing-page .link-wrap:last-child {
+  right: 0;
+}
+
+.landing-page .link-golf,
+.landing-page .link-weddings {
+  color: #fff;
+  font-family: 'americana', serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.5em;
+  font-weight: bold !important;
+  border-bottom: 2px solid #fff;
+  padding: 0 0 3px 8px;
+  text-decoration: none !important;
+}
+
+header {
+  background: #fff;
+  height: 245px;
+  padding: 30px 0;
+  position: relative;
+}
+
+header img {
+  max-width: 318px;
+  width: 100%;
+}
+
+header .booking-link {
+  bottom: 24px;
+  color: #393c3e;
+  font-size: 11px;
+  font-weight: bold;
+  right: 35px;
+  position: absolute;
+  z-index: 11;
+}
+
+header .booking-link.sticky {
+  top: 23px;
+  position: fixed;
+  z-index: 100;
+  bottom: auto;
+}
+
+header .fa {
+  margin-left: 10px;
+}
+
+footer {
+  background: #0c432e;
+  border-top: 4px solid #fff;
+  padding: 16px 0;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer img {
+  height: 94px;
+  width: 350px;
+}
+
+.hero {
+  background-size: cover;
+  background-position: center center;
+  height: 354px;
+}
+
+.generic-content {
+  padding: 135px 0;
+}
+
+.generic-content .container {
+  max-width: 920px;
+}
+
+.alignright {
+  float: right;
+  margin-bottom: 15px;
+  margin-left: 25px;
+}
+
+.alignleft {
+  float: left;
+  margin-bottom: 15px;
+  margin-right: 25px;
+}
+
+.page-content {
+  padding: 170px 0;
+  text-align: center;
+}
+
+.page-content .container {
+  color: #393c3e;
+  max-width: 684px;
+}
+
+.page-content h1,
+.generic-content h1 {
+  font-size: 34px;
+  margin-bottom: 45px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.page-content p,
+.generic-content p {
+  font-family: 'americana', serif;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.generic-content p {
+  color: #393d3f;
+  font-family: 'americana', serif;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+
+.page-content .page-links {
+  border: 0;
+  display: block;
+  margin-bottom: 4px;
+  overflow: hidden;
+}
+
+.page-content .page-links img {
+  display: block;
+  height: auto !important;
+  width: 100%;
+}
+
+.page-content .page-links .link-title {
+  bottom: 10px;
+  color: #fff;
+  font-size: 14px;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.page-link-row {
+  margin-top: 20px;
+}
+
+.page-link-row .col-xs-6 {
+  margin-bottom: 10px;
+}
+
+.page-link-grid {
+  align-items:         center;
+  display: flex;
+  flex-wrap:         wrap;
+  justify-content:         center;
+  padding: 0 5px;
+  flex-direction:         row;
+}
+
+.page-link-grid a {
+  display: block;
+  margin: 0 4px;
+  position: relative;
+  width: 153px;
+}
+
+.callout-block {
+  font-family: 'americana', serif;
+  padding: 120px 0;
+  text-align: center;
+}
+
+.callout-block .container {
+  max-width: 650px;
+}
+
+.callout-block hr {
+  border: 0;
+  border-top: 3px solid;
+  margin: 0 auto 30px;
+  width: 55px;
+}
+
+.callout-block h1 {
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.callout-block p {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.callout-block a {
+  color: inherit;
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+.golf.callout-one,
+.weddings.callout-one {
+  background: #393d3f url('../img/bg-calloutone.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+
+#monogram-callout {
+  background: url('../img/logo-monogram.png') no-repeat center center;
+  background-size: contain;
+  bottom: 10%;
+  left: 10%;
+  position: absolute;
+  opacity: 0.05;
+  right: 10%;
+  top: 10%;
+}
+
+.golf.callout-two,
+.weddings.callout-two {
+  background: #fff url('../img/bg-golfcallouttwo.jpg') no-repeat center center;
+  background-size: cover;
+  color: #0c4530;
+}
+
+.weddings.callout-two {
+  background-image: url('../img/bg-weddingscallouttwo.jpg');
+  color: #fff;
+}
+
+.golf.callout-three,
+.weddings.callout-three {
+  background: #fff url('../img/bg-golfcalloutthree.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+}
+
+.weddings.callout-three {
+  background-image: url('../img/bg-weddingscalloutthree.jpg');
+  color: #393d3f;
+}
+
+.callout-four {
+  background: url('../img/bg-calloutfour.jpg') no-repeat center !important;
+  background-size: cover !important;
+  color: #fff;
+}
+
+.events-container {
+  padding-top: 160px;
+}
+
+.events-container h1 {
+  color: #393c3e;
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+
+.event-info {
+  background: url('../img/bg-golfevents.jpg') no-repeat right center;
+  background-size: 582px 100% !important;
+}
+
+.event-info .container {
+  max-width: 900px;
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.event-info h1 {
+  color: #393c3e;
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.event-info a {
+  color: #393c3e;
+  font-family: 'americana', serif;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.golf-calendar-times {
+  color: #393c3e;
+  font-family: inherit !important;
+  font-size: 14px !important;
+  list-style-type: none;
+  margin: 0 0 50px !important;
+  max-width: 475px;
+  padding: 0;
+}
+
+.golf-calendar-times li {
+  margin-bottom: 5px;
+}
+
+.golf-calendar-times .time {
+  display: inline-block;
+  font-weight: bold;
+  width: 175px;
+  text-transform: uppercase;
+}
+
+.golf-calendar-times .event {
+  display: inline-block;
+}
+
+.golf-footer-slider {
+  background: url('../img/bg-golffooterslider.jpg') no-repeat center center;
+  background-size: cover;
+  height: 678px;
+}
+
+.ajde_evcal_calendar {
+  margin-bottom: 130px;
+}
+
+.evcal_month_line {
+  border-bottom: 1px solid #393c3e !important;
+  margin-top: 20px !important;
+}
+
+.evcal_month_line p {
+  color: #393c3e !important;
+  font-family: 'americana', serif !important;
+  font-size: 17px !important;
+  margin-bottom: 5px !important;
+  text-transform: capitalize !important;
+}
+
+.evo_date,
+.evcal_event_title,
+.evo_below_title span {
+  color: #0c4530 !important;
+  text-transform: capitalize !important;
+}
+
+.evo_date .start {
+  font-size: 46px !important;
+}
+
+.evo_date .start em {
+  display: none !important;
+}
+
+.evcal_event_title {
+  font-weight: bold;
+  font-family: 'centrale-sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !important;
+}
+
+.eventon_list_event {
+  border-bottom: 1px solid #7d9c91;
+  padding: 45px 0;
+}
+
+.eventon_events_list .eventon_list_event .evcal_list_a,
+.eventon_events_list .eventon_list_event .event_description {
+  border: 0 !important;
+}
+
+.desc_trig {
+  background: 0 !important;
+  border-radius: 0 !important;
+  border: none !important;
+}
+
+#evcal_list {
+  border: 0 !important;
+  border-radius: 0 !important;
+  font-family: 'centrale-sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !important;
+  margin: 0 0 24px !important;
+}
+
+.eventon_events_list .eventon_list_event .evcal_cblock span, .evo_pop_body .evcal_cblock span,
+.ajde_evcal_calendar *, .evcal_event_subtitle {
+  color: #393c3e !important;
+  font-family: 'centrale-sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !important;
+}
+
+.evcal_evdata_row,
+#evcal_list .bordb {
+  background: #fff !important;
+}
+
+.eventon_events_list .eventon_list_event .event_description, .eventon_events_list .eventon_list_event .event_description .evcal_desc_top,
+.eventon_list_event {
+  border-bottom: 0 !important;
+}
+
+.ajde_evcal_calendar .eventon_events_list p {
+  padding-top: 20px !important;
+}
+
+.ajde_evcal_calendar .eventon_events_list .evcal_evdata_cell p {
+  padding-top: 0 !important;
+}
+
+.evcal_evdata_row .evcal_evdata_icons, .evo_metarow_learnMICS .evcal_col50 .evcal_evdata_icons {
+  top: 11px;
+}
+
+.contact-info .col-sm-6:last-child {
+  background: #393d3f;
+  height: 760px;
+}
+
+.evo_date, .evcal_event_title, .evo_below_title span {
+  color: #393c3e !important;
+}
+
+.contact-info-right {
+  color: #fff;
+  font-family: 'americana', serif;
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+}
+
+.contact-info-right a, .evo_h3 a {
+  color: inherit;
+}
+
+.contact-info-right p:last-child {
+  font-family: 'centrale-sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.evorow.tb .evcal_col50, .evorow .tb .evcal_col50 {
+  background: #fff;
+}
+
+#golf-drop {
+  display: none;
+  padding: 0;
+  margin: -14px 0 0;
+  list-style-type: none;
+  padding: 15px 20px;
+  position: absolute;
+  right: 57px;
+  font-size: 12px;
+  background: #393d3e;
+  text-align: center;
+  z-index: 50;
+}
+
+#golf-drop li {
+  margin-bottom: 5px;
+}
+
+#golf-drop li:last-child {
+  margin: 0;
+}
+
+#golf-drop a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#golf-drop a:hover {
+  text-decoration: underline;
+}
+
+.flex-wrap {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+@media (max-width: 320px) {
+  header.sticky {
+    height: 340px !important;
+  }
+  header .booking-link {
+    right: 20px;
+  }
+
+  header .booking-link .fa {
+    display: none;
+  }
+}
+
+@media (max-width: 544px) {
+  .landing-page .link-golf, .landing-page .link-weddings {
+    font-size: 15px !important;
+  }
+  .landing-page > a {
+    height: 200px;
+    margin: -100px 0 0 -100px;
+    width: 200px;
+  }
+
+  #mobile-trigger {
+    display: block;
+  }
+
+  body {
+    padding-top: 93px;
+  }
+
+  .bg-gradient {
+    top: 93px;
+  }
+
+  header {
+    height: 93px !important;
+    padding: 15px 0 !important;
+  }
+
+  .menu-golf-menu-container,
+  .menu-wedding-menu-container {
+    height: auto !important;
+  }
+
+  header .booking-link {
+    display: block !important;
+    right: 62px !important;
+    bottom: 37px !important;
+  }
+
+  header img {
+    width: 198px !important;
+    float: left;
+    margin: 0 0 0 -67px;
+  }
+
+  header #logo {
+    max-width: 200px;
+    float: left;
+    height: 63px;
+    overflow: hidden;
+    width: 63px;
+  }
+
+  header .menu-golf-menu-container, header .menu-wedding-menu-container {
+    top: 35px !important;
+    padding: 0;
+    height: 22px;
+  }
+
+  header .menu-golf-menu-container a, header .menu-wedding-menu-container a {
+    border-color: #000 !important;
+    color: #000 !important;
+  }
+
+  .container-fluid .menu-golf-menu-container,
+  .container-fluid .menu-wedding-menu-container  {
+    display: none !important;
+  }
+
+  footer .container {
+    display: block !important;
+    text-align: center;
+  }
+
+  .contact-number {
+    display: inline-block;
+  }
+
+  .menu-footer-container {
+    float: none !important;
+  }
+
+  .social-links {
+    padding: 0;
+    text-align: center;
+  }
+
+  .social-links li {
+    margin: 6px 5px;
+  }
+
+  #menu-footer {
+    margin: 38px auto;
+    text-align: center;
+    width: 100%;
+  }
+
+  #menu-footer li {
+    display: inline-block;
+    margin: 0 20px;
+  }
+
+  footer .container > img {
+    display: block;
+    float: none !important;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  .event-info .event {
+    display: block;
+  }
+
+  header.sticky {
+    height: 265px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  #mobile-trigger {
+    display: block;
+  }
+
+  body {
+    padding-top: 93px;
+  }
+
+  .bg-gradient {
+    top: 93px;
+  }
+
+  header {
+    height: 93px !important;
+    padding: 15px 0 !important;
+  }
+
+  .menu-golf-menu-container,
+  .menu-wedding-menu-container {
+    height: auto !important;
+  }
+
+  header .booking-link {
+    display: block !important;
+    right: 62px !important;
+    bottom: 37px !important;
+  }
+
+  header img {
+    width: 198px !important;
+    float: left;
+    margin: 0 0 0 -67px;
+  }
+
+  header #logo {
+    max-width: 200px;
+    float: left;
+    height: 63px;
+    overflow: hidden;
+    width: 63px;
+  }
+
+  header .menu-golf-menu-container, header .menu-wedding-menu-container {
+    top: 35px !important;
+    padding: 0;
+    height: 22px;
+  }
+
+  header .menu-golf-menu-container a, header .menu-wedding-menu-container a {
+    border-color: #000 !important;
+    color: #000 !important;
+  }
+
+  .container-fluid .menu-golf-menu-container,
+  .container-fluid .menu-wedding-menu-container  {
+    display: none !important;
+  }
+
+  footer .container {
+    display: block !important;
+    text-align: center;
+  }
+
+  footer .container img {
+    float: none !important;
+  }
+
+  .social-links {
+    padding: 0 !important;
+  }
+
+  #menu-footer {
+    margin-left: 0;
+  }
+
+  #menu-footer li {
+    margin: 0 5px;
+  }
+
+  .menu-footer-container {
+    float: none;
+  }
+
+  .event-info {
+    background: #fff !important;
+  }
+
+  .landing-page .link-wrap {
+    bottom: 20%;
+  }
+
+  .landing-page .link-golf, .landing-page .link-weddings {
+    font-size: 20px;
+  }
+
+  .landing-page .the-grange {
+    height: auto;
+    margin-left: -150px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {}
+
+@media (max-width: 1025px) {
+  footer .container {
+    display: block;
+  }
+  footer .container > img {
+    display: block;
+    float: none !important;
+    margin: 0 auto;
+  }
+
+  .flex-wrap .contact-number {
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+
+}
